@@ -1,0 +1,17 @@
+# This is the west manifest file for upstream Zephyr.
+# This will clone zephyr and other sub projects in edge-rtos-babelfish-v3 folder.
+
+# Steps to follow to use this file, run below commands in edge-rtos-babelfish-v3 folder:
+# 1. Create local west workspace using command "west init -l --mf full_path\west.yml full_path\examples"
+# 2. west update
+
+manifest:
+  remotes:
+    - name: edge-rtos-babelfish-v3
+      url-base: https://github.com/etn-ccis/edge-rtos-babelfish-v3.git
+  projects:
+    - name: ../edge-rtos-babelfish-v3
+      remote: edge-rtos-babelfish-v3
+      import: true
+  self:
+    path: my_app
