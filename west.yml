@@ -10,7 +10,7 @@ manifest:
     - name: edge-rtos-babelfish-v3
       url-base: https://github.com/etn-ccis/edge-rtos-babelfish-v3.git
   projects:
-    - name: ../edge-rtos-babelfish-v3
+    - name: ..\edge-rtos-babelfish-v3
       remote: edge-rtos-babelfish-v3
       import: true
   self:
