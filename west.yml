@@ -8,9 +8,12 @@
 manifest:
   remotes:
     - name: edge-rtos-babelfish-v3
-      url-base: https://github.com/etn-ccis/edge-rtos-babelfish-v3.git
+      url-base: https://github.com/etn-ccis/
   projects:
     - name: edge-rtos-babelfish-v3
+      url: https://github.com/etn-ccis/edge-rtos-babelfish-v3.git
+      revision: dev
       import: true
+      
   self:
-    path: my_app
+    path: zephyr_app
